@@ -18,23 +18,23 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<header class="header h-20 bg-[#ccd2d2] sticky top-0 ">
-            <div class="container  max-w-[1200px] mx-auto  ">
-                <div class="flex-menu  flex h-20 w-[60%] float-left items-center font-sans uppercase ">
-					<div class="w-[25%]  bg-blue-500" >
-						<img class="m-[25%]" src="C:\Users\User\Desktop\Proyectos\public\img\logo.png" alt="Spike">
+            <div class="flex container ml-[15%]">
+                <div class="flex-menu  flex h-20 w-[60%] float font-sans uppercase ">
+					<div class="w-[10%] h-[10%]  mr-10" >
+						<img src="public/img/logo.png">
 					</div>
                     
-                    <menu>
-                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="/">Quienes somos</a></li>
-                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="#">Acerca de</a></li>
-                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="#">Soporte</a></li>
+                    <menu class="py-5 ">
+                        <li class="inline-block list-none m-[10px] "><a class="font-semibold hover:text-[#e1edf3] " href="/">Quienes somos</a></li>
+                        <li class="inline-block list-none m-[10px] "><a class=" font-semibold hover:text-[#e1edf3] " href="#">Acerca de</a></li>
+                        <li class="inline-block list-none m-[10px] "><a class=" font-semibold hover:text-[#e1edf3]  " href="#">Soporte</a></li>
                     </menu>
                 </div>
-                <div class="menu-right float-left w-[40%] my-2  text-[#DCDEDF] font-sans ">
-                    <a href="#" class="btn-Iniciar mx-[6px] text-[#f8eeee] bg-[#3b2dfa] p-[8px] font-sans no-underline inline-flex items-center gap-[8px] ">
+                <div class="menu-right float w-[40%] ml-[20%] my-5  font-sans ">
+                    <a href="#" class="btn-Iniciar mx-[6px] p-[8px] font-sans no-underline inline-flex items-center gap-[8px] ">
                         Registrarse
                     </a>
-                    <a class="m-[0 6px] text-[#f8eeee] no-underline" href="#">Iniciar Sesión</a>
+                    <a class="m-[0 6px]  no-underline" href="#">Iniciar Sesión</a>
                 </div>
             </div>
         </header>
@@ -42,5 +42,14 @@ const { title } = Astro.props;
 		
 	</body>
 </html>
+<style>
+	@font-face {
+		font-family: 'titulos';
+		src: url('/fonts/CastoroTitling-Regular.ttf');
+		font-weight: normal;
+  		font-style: normal;
+  		font-display: swap;
+	}
+</style>
 
 	
