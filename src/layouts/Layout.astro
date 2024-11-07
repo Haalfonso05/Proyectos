@@ -17,34 +17,30 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<header class="header h-20 bg-[#ccd2d2] sticky top-0 ">
+            <div class="container  max-w-[1200px] mx-auto  ">
+                <div class="flex-menu  flex h-20 w-[60%] float-left items-center font-sans uppercase ">
+					<div class="w-[25%]  bg-blue-500" >
+						<img class="m-[25%]" src="C:\Users\User\Desktop\Proyectos\public\img\logo.png" alt="Spike">
+					</div>
+                    
+                    <menu>
+                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="/">Quienes somos</a></li>
+                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="#">Acerca de</a></li>
+                        <li class="inline-block list-none m-[10px] "><a class="text-[#DCDEDF] font-semibold hover:text-[#e1edf3] " href="#">Soporte</a></li>
+                    </menu>
+                </div>
+                <div class="menu-right float-left w-[40%] my-2  text-[#DCDEDF] font-sans ">
+                    <a href="#" class="btn-Iniciar mx-[6px] text-[#f8eeee] bg-[#3b2dfa] p-[8px] font-sans no-underline inline-flex items-center gap-[8px] ">
+                        Registrarse
+                    </a>
+                    <a class="m-[0 6px] text-[#f8eeee] no-underline" href="#">Iniciar Sesión</a>
+                </div>
+            </div>
+        </header>
+		<slot/>
+		
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+
+	
