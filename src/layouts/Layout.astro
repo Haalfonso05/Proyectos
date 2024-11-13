@@ -14,32 +14,27 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>VerSell</title>
 	</head>
 	<body>
-		<header class="header h-20 bg-[#679e02] sticky top-0 text-white">
-            <div class="flex container ml-[15%]">
-                <div class="flex-menu  flex h-20 w-[60%] float font-sans uppercase ">
-					<div class="w-[10%] h-[10%]  mr-10" >
-						<img src="public/img/logo.png">
-					</div>
-                    
-                    <menu class="py-5 ">
-                        <li class="inline-block list-none m-[10px] "><a class="font-semibold hover:text-[#e1edf3] " href="/">RECOMENDACIONES</a></li>
-                        <li class="inline-block list-none m-[10px] "><a class=" font-semibold hover:text-[#e1edf3] " href="#">CONTACTO</a></li>
-                        <li class="inline-block list-none m-[10px] "><a class=" font-semibold hover:text-[#e1edf3]  " href="#">RESEÑAS</a></li>
-                        <li class="inline-block list-none m-[10px] "><a class=" font-semibold hover:text-[#e1edf3]  " href="#">ACERCA DE</a></li>
-                    </menu>
-                </div>
-                <div class="menu-right float w-[40%] ml-[20%] py-[1%] font-sans bg-[#4f5733] rounded-l-full">
-                    <a href="#" class="btn-Iniciar p-[8px] font-sans no-underline inline-flex items-center gap-[8px] ">
-                        INICIAR SESIÓN
-                    </a>
-					<p class="mx-[1%] inline-flex">|</p>
-                    <a class="  no-underline" href="#">REGISTRARSE</a>
-                </div>
-            </div>
-        </header>
+		<header class="bg-[#679e02] top-0 sticky w-full h-[auto] inline-flex">
+			<img src="/public/img/logo.png" alt="" class="size-20 ml-[20%] mx-[5%]">
+			<div class="inline-flex">
+				<ul class="inline-flex text-white space-x-10 my-[5%] font-semibold mx-[5%]">
+					<li>RECOMENDACIONES</li>
+					<li>CONTACTO</li>
+					<li>RESEÑAS</li>
+					
+
+				</ul>
+			</div>
+			<div class="inline-flex ml-[20%] bg-[#4f5733] rounded-l-full pr-[8%] pl-[2%]">
+				<ul class="inline-flex text-white my-[5%]  font-semibold space-x-10 text-center">
+					<a href="/src/pages/login.astro">INICIAR SESIÓN</a>
+					<a href="/registro.astro">REGISTRATE</a>
+				</ul>	
+			</div>
+		</header>
 		<slot/>
 		
 	</body>

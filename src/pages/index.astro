@@ -5,47 +5,43 @@ import Card from '../components/Card.astro';
 
 <Layout title="">
 	<body>
-	
-		<div class="bg-[url('public/img/fondos/fondo1.png')] w-[100%] h-[650px] bg-cover list-none">
-			<li class="text-white text-9xl pt-9 ml-[35%] pb-[100px] font-bold font-titulos">VERSELL</li>
-		
-			<div class="grid grid-cols-2 gap-y-14  py-[25px] mx-[25%] place-content-center">
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Acerca De</li>
+
+		<div class="bg-[url('public/img/fondos/fondo2.jpeg')] w-[100%] h-[900px] bg-cover list-none  ">
+			<li class="text-[#574240] text-9xl mx-[35%]">VERSELL</li>
+
+			<div class="bg-[#574240] w-[40%] h-[43%] rounded-3xl opacity-70 ml-[15%] mt-[10%] inline-flex">		
+				<li class="text-white text-3xl text-justify px-7 pt-10 pb-10 ">
+					Somos una plataforma que se centra en contactar con agricultores que se encuentren interesados en distribuir sus productos de forma directa y sin recurrir a muchos intermediarios ya que esto baja considerablemente sus ganancias, pero gracias a VerSell estos agricultores pueden transportar de forma directa sus productos y tener ganancias mas justas.
+				</li>
+			</div>
+			<div class="inline-flex">
+				<div>
+					<div class="ml-[150px] w-[100%] h-[20%] bg-[#4f5733] rounded-full">
+						<p class="text-white text-2xl mx-[20%] py-[2%]">¿Que haremos hoy?</p>
+					</div>
+					<div class="flex-col text-white text-2xl font-medium mt-[45%] ml-[15%] ">
+						<ul class="inline-flex space-x-12">
+							<a href="/" class="boton botonA">VENDER<a></a>
+							<a href="/" class="boton botonA">COMPRAR<a></a>
+						</ul>
+					</div>
+
 				</div>
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Contacto</li>
-				</div>
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Vender</li>
-				</div>
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Comprar</li>
-				</div>
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Servicios</li>
-				</div>
-				<div class="w-[86%] h-[50px]  bg-[#d9d9d9] rounded-full">
-					<li class="text-4xl text-center">Recomendaciones</li>
-				</div>
+				
 			</div>
 			
-
-	<div class="w-[100%] h-[700px] bg-[#d9d9d9] list-none inline-flex">
-		<div class="w-[30%] h-[30%] mt-[15%] ml-[10%]">
-			<li class="text-8xl">¿QUIENES SOMOS?</li>
 		</div>
-
-		<div class=".clip-poligon w-[50%] h-[60%] bg-[#63a8d4] mt-[10%] ml-[5%] border-2 border-blue-700 rounded-2xl rotate-270 ">
-			<li class="text-4xl text-center mx-[5%] my-[5%]">
-				Somos una plataforma que se centra en contactar con agricultores que se encuentren interesados en distribuir sus productos de forma directa y sin recurrir a muchos intermediarios ya que esto baja considerablemente sus ganancias, pero gracias a VerSell estos agricultores pueden transportar de forma directa sus productos y tener ganancias mas justas.
-			</li>
-		</div>
-
-	</div>
 
 	</body>
 
 </Layout>
 
 
+<style>
+	.botonA{
+		@apply hover:bg-white hover:text-[#4f5733] hover:cursor-pointer;
+	}
+	.boton{
+		@apply bg-[#4f5733] px-[20%] py-[2%] rounded-full border-2 border-[#4f5733];
+	}
+</style>
