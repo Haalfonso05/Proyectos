@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from 'astro-icon/components';
+---
+
+<Layout title="registro">
+   <body>
+
+    <div class="bg-gradient-to-r from-[#8e9931] to-[#f1ea70] w-[100%] h-[1000px] bg-cover list-none mr-[20%] ">
+
+
+        <div class="bg-[url('public/img/fondos/fondoRegister.jpg')]  w-[50%] h-[80%] rounded-3xl mx-[25%] mt-[5%] inline-flex bg-no-repeat">		
+            <div class="w-[100%] list-none my-[2%] ">
+                <ul>
+                    <li class="text-3xl mx-[20%] text-center my-[2%] font-extrabold underline text-[#574240]">COMPLETA EL FORMULARIO</li>  
+                    <li class="bg-white text-2xl mx-[8%] my-[10%] border-b-4 border-[#595048]"><input type="text" placeholder="Ingrese su nombre" class="pr-[60%] bg-inherit placeholder:text-[#574240] "><Icon name="mdi:user" class="inline-flex size-7 text-[#574240]" /></li>                  
+                    <li class="bg-white text-2xl mx-[8%] my-[10%] border-b-4 border-[#595048]"><input type="email" placeholder="Ingrese su correo " class="pr-[60%] bg-inherit placeholder:text-[#574240] "><Icon name="mdi:email-outline" class="inline-flex size-7 text-[#574240]" /></li>                  
+                    <li class="bg-white text-2xl mx-[8%] my-[10%] border-b-4 border-[#595048]"><input type="password" placeholder="Ingrese su contraseña" class="pr-[60%] bg-inherit placeholder:text-[#574240] "><Icon name="mdi:lock-outline" class="inline-flex size-7 text-[#574240]" /></li>     
+                    <li class="text-3xl  text-center mx-[35%] mt-[15%] bg-[#574240] text-white border-2 border-[#574240] rounded-full w-[30%] botonA">REGISTRATE</li> 
+                    <li class="ml-[35%] mt-[2%] text-xl inline-flex text-white">¿Ya tienes una cuenta?</li> <a href="/sesion" class="inline-flex px-3 text-white border-2 border-[#4f5733] bg-[#4f5733] rounded-full hover:bg-white hover:text-[#4f5733]">Inicia sesion</a>            
+                    <li class="ml-[33%] mt-[2%] text-xl inline-flex text-white">¿Olvidaste tu contraseña?</li> <a href="/sesion" class="inline-flex px-5 text-white border-2 border-[#4f5733] bg-[#4f5733] rounded-full hover:bg-white hover:text-[#4f5733]">Recuperala</a>            
+                </ul>
+            </div> 
+        </div>
+      
+    </div>
+    
+   </body>
+</Layout>
+
+<style>
+    .botonA{
+		@apply hover:bg-white hover:text-[#574240] hover:cursor-pointer;
+	}
+</style>

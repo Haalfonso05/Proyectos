@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from 'astro-icon/components';
+---
+
+<Layout title="Inicio de Sesion">
+    <body>
+
+        <div class="bg-[url('public/img/fondos/fondoLogin.jpg')] blu bg- w-[100%] h-[1000px] bg-cover list-none mr-[20%] ">
+
+
+            <div class="bg-gradient-to-r from-[#8e9931]/60 to-[#f1ea70]/90  w-[50%] h-[80%] rounded-3xl mx-[25%] mt-[5%] inline-flex bg-no-repeat">		
+                <div class="w-[100%] list-none my-[2%] ">
+                    <ul>
+                        <li class="mx-[35%] text-center my-[2%] text-[#574240] bg-white rounded-full w-[30%]"><Icon name="mdi:user" class="inline-flex size-60 text-[#574240] "/></li>  
+                        <li class="bg-white text-2xl mx-[8%] my-[10%] border-b-4 border-[#595048]"><input type="email" placeholder="Ingrese su correo" class="pr-[60%] bg-inherit placeholder:text-[#574240] "><Icon name="mdi:email-outline" class="inline-flex size-7 text-[#574240]"/></li>                  
+                        <li class="bg-white text-2xl mx-[8%] mt-[10%] border-b-4 border-[#595048]"><input type="password" placeholder="Ingrese su contraseña" class="pr-[60%] bg-inherit placeholder:text-[#574240] "><Icon name="mdi:lock-outline" class="inline-flex size-7 text-[#574240]" /></li>  
+                        <li class="bg-[#595048] text-white rounded-full w-[20%] ml-[8%] mt-[2%] text-center border-2 border-[#595048] hover:bg-white hover:text-[#595048]"><a href="/"></a>Olvido su contraseña?</li>   
+                        <li class="text-3xl  text-center mx-[35%] mt-[8%] bg-[#574240] text-white border-2 border-[#574240] rounded-full w-[30%] botonA">Iniciar Sesion</li> 
+                        <li class="ml-[35%] mt-[2%] text-xl inline-flex text-white">¿No tienes una cuenta?</li> <a href="/registro" class="inline-flex px-3 text-white border-2 border-[#4f5733] bg-[#4f5733] rounded-full hover:bg-white hover:text-[#4f5733]">Registrate</a>                                </ul>
+                </div> 
+            </div>
+          
+        </div>
+        
+    </body>
+    
+</Layout>
