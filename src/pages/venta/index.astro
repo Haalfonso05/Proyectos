@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout title="Vender">
+    <body>
+
+        <div class="bg-[#595048] w-[100%] h-[1000px] ">
+            <div class="w-[80%] h-[80%] bg-green-600 pt-[3%]">
+                <div class="w-[80%] h-[100%] bg-[#4f5733] mx-[10%] py-[1%] rounded-3xl">
+                    <div class="text-3xl bg-white list-none w-[96%] h-[100%] mx-[2%] rounded-3xl">
+                        <li class="text-center">FORMULARIO PARA VENDER PRODUCTOS</li>
+                        <ul class="mx-[5%] flex-col">
+                            <li class="my-[1%]">Nombre:</li>
+                            <li class="my-[1%]">¿Que producto venderemos?:</li>
+                            <li class="my-[1%] inline-flex">Precio de la caja o costal:</li><input type="text" placeholder="Ingrese el precio">
+                            <li class="my-[1%] inline-flex">Ubicacion del lugar de venta:</li><input type="text" placeholder="Ingrese el lugar de venta">
+                            <li class="my-[1%] inline-flex">Descripcion del lugar:</li><input type="text" placeholder="Describa el lugar">
+                            <li class="my-[1%] inline-flex">Fotos del producto:</li><input type="file" class="w-[80%]">
+                            <li class="my-[1%]">Comentarios extra:</li>
+                            <input type="text" placeholder="inrese sus comentarios" class="w-[100%] h-[60%]">               
+                        </ul>
+                        <a href="/" class="mx-[5%] mt-[10%] boton botonA inline-flex">CANCELAR</a>
+                        <a href="/" class="boton botonA inline-flex">PUBLICAR</a>
+                    </div>   
+                </div>
+            </div> 
+        </div>
+        
+    </body>
+</Layout>
+
+<style>
+    .boton{
+       @apply bg-[#4f5733] w-[20%] px-[2%] text-center rounded-full text-white border-2 border-[#4f5733];
+    }
+    .botonA{
+        @apply hover:bg-white hover:text-[#4f5733];
+    }
+</style>
