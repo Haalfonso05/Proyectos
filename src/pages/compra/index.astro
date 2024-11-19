@@ -3,53 +3,140 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Comprar">
-    <body>
-        
-        <div class="bg-[#595048] w-[100%] h-[1000px] ">
-            <p class="text-white text-4xl text-center font-extrabold pt-[2%] mb-[5%]">COMPRAR</p>
-            <div class="inline-flex float-end w-[30%] h-[20%] pb-[20%] bg-[#f2ede4] sticky top-[15%] rounded-3xl">
-                <div class="w-[100%] ">
-                    <p class="text-3xl font-bold text-center">PRODUCTOS</p>
-                    <ul class="text-end mx-[2%] text-2xl flex-col">
-                    <li>Tomates</li>
-                    <li>Cebollin</li>
-                    <li>Mazorca</li>
-                </ul>
+        <div class="w-[100%] h-[3200px] bg-[#595048]">
+                <p class="text-white text-4xl text-center font-extrabold pt-[2%] mb-[5%]">COMPRAR</p>
+                <div class="inline-flex float-end w-[30%] h-[20%] pb-[20%] bg-[#f2ede4] sticky top-[15%] rounded-3xl">
+                    <div class="w-[100%] ">
+                        <p class="text-3xl font-bold text-center">PRODUCTOS</p>
+                        <ul class="mx-[2%] text-2xl inline-flex text-center">
+                        <li>Tomates</li>
+                        <li>Cebollin</li>
+                        <li>Mazorca</li>
+                    </ul>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div class="bg-[#f2ede4] w-[40%] h-[20%] rounded-3xl  ml-[10%] inline-flex">		
-                <div class="bg-[url('public/img/tomate.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/tomate.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-2 font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
                 </div>
-                <ul class="flex-col mx-[3%] my-[3%] font-bold">
-                    <li class="my-[1%] text-2xl">Nombre:</li>
-                    <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
-                    <li class="my-[1%] text-2xl">Calificacion:</li>
-                    <li class="my-[1%] text-3xl">Precio:</li>
-                </ul>
-            </div>
-            <div class="bg-[#f2ede4] w-[40%] h-[20%] rounded-3xl  ml-[10%] mt-[5%] inline-flex">		
-                <div class="bg-[url('public/img/cebollin.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                <div class="bg-[#f2ede4] w-[40%] my-3 h-[15%] rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/cebollin.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-2 font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
                 </div>
-                <ul class="flex-col mx-[3%] my-[3%] font-bold">
-                    <li class="my-[1%] text-2xl">Nombre:</li>
-                    <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
-                    <li class="my-[1%] text-2xl">Calificacion:</li>
-                    <li class="my-[1%] text-3xl">Precio:</li>
-                </ul>
-            </div>
-            <div class="bg-[#f2ede4] w-[40%] h-[20%] rounded-3xl  ml-[10%] mt-[5%] inline-flex">		
-                <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
                 </div>
-                <ul class="flex-col mx-[3%] my-[3%] font-bold">
-                    <li class="my-[1%] text-2xl">Nombre:</li>
-                    <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
-                    <li class="my-[1%] text-2xl">Calificacion:</li>
-                    <li class="my-[1%] text-3xl">Precio:</li>
-                </ul>
-            </div>
-        </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
+                <div class="bg-[#f2ede4] w-[40%] h-[20%] my-3 rounded-3xl  ml-[10%] inline-flex">		
+                    <div class="bg-[url('public/img/mazorca.jpeg')] w-[30%] h-[80%] mx-[3%] my-[2%] rounded-full bg-cover">
+                    </div>
+                    <ul class="flex-col mx-[3%] my-[3%] font-bold">
+                        <li class="my-[1%] text-2xl">Nombre:</li>
+                        <li class="my-[1%] text-2xl">Lugar de procedencia:</li>
+                        <li class="my-[1%] text-2xl">Calificacion:</li>
+                        <li class="my-[1%] text-3xl">Precio:</li>
+                    </ul>
+                </div>
 
-    </body>
+        </div>
     
 </Layout>
