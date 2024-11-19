@@ -18,7 +18,7 @@ import { Icon } from 'astro-icon/components';
 		<title>{title}</title>
 	</head>
 	<body>
-		<header class="bg-[#679e02] top-0 sticky w-full h-[auto] flex flex-row justify-between">
+		<header class="bg-[#679e02] top-0 sticky z-20 w-full h-[auto] flex flex-row justify-between">
 			<a href="/" class="ml-[10%] ">
 				<img src="/public/img/logo.png" alt="" class="size-20 my-[20%] ">				
 			</a>
@@ -49,99 +49,45 @@ import { Icon } from 'astro-icon/components';
 		<slot/>
 			  
 			  <!-- <footer> -->
-			   <div class="w-[100%] h-[600px] bg-[#150733] pt-[5%] text-white ">
+			   <div class="w-[100%] h-[300px] bg-[#4f5733] pt-[5%] text-white ">
 				<div class="inline-flex w-[100%]">
 				  <div class="flex-col ml-[13%]">
 					<ul class="text-[#C2D5CF] text-xs">
-					  <li class="text-white text-xl mb-[2%] font-bold">Sobre Eneba</li>
-					  <li class=" hover:text-[#FAD318] hover:cursor-pointer">Sobre nosotros</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Contáctanos</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Vacantes</li>
+					  <li class="text-white text-xl mb-[2%] font-bold">Sobre VerSell</li>
+					  <li class=" hover:text-[#f2ede4] hover:cursor-pointer">Sobre nosotros</li>
+					  <li class="mt-[1%] hover:text-[#f2ede4] hover:cursor-pointer">Contáctanos</li>
+					  <li class="mt-[1%] hover:text-[#f2ede4] hover:cursor-pointer">Vacantes</li>
 					</ul>
 				  </div> 
 			
 				  <div class="flex-col mx-[2%]">
 					<ul class="text-[#C2D5CF] text-xs">
-					  <li class="text-white text-xl mb-[2%] font-bold">Comprar</li>
-					  <li class=" hover:text-[#FAD318] hover:cursor-pointer">cómo comprar</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Lista de juegos</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Colecciones</li>
-					</ul>
-				  </div>
-			
-				  <div class="flex-col mx-[2%]">
-					<ul class="text-[#C2D5CF] text-xs">
 					  <li class="text-white text-xl mb-[2%] font-bold">Ayuda</li>
-					  <li class=" hover:text-[#FAD318] hover:cursor-pointer">Preguntas frecuentes</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Cómo activar tus juegos</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Crear un ticket</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Política de devoluciones</li>
+					  <li class=" hover:text-[#f2ede4] hover:cursor-pointer">Preguntas frecuentes</li
+					  <li class="mt-[1%] hover:text-[#f2ede4] hover:cursor-pointer">Crear un ticket</li>
 					</ul>
 				  </div>
 			
 				  <div class="flex-col mx-[2%]">
 					<ul class="text-[#C2D5CF] text-xs">
 					  <li class="text-white text-xl mb-[2%] font-bold">Comunidad</li>
-					  <li class=" hover:text-[#FAD318] hover:cursor-pointer">Blog</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Sorteos</li>
-					  <li class="mt-[1%] hover:text-[#FAD318] hover:cursor-pointer">Conviértete en afiliado</li>
+					  <li class=" hover:text-[#f2ede4] hover:cursor-pointer">Blog</li>
+					  <li class="mt-[1%] hover:text-[#f2ede4] hover:cursor-pointer">Sorteos</li>
+					  <li class="mt-[1%] hover:text-[#f2ede4] hover:cursor-pointer">Conviértete en afiliado</li>
 					</ul>
 				  </div>
 			
-				  <div class="flex-col mx-[2%]">
-					<ul>
-					  <li class="text-white mb-[10%] text-xl font-bold">Negocios</li>
-					  <li class="border-2 border-white py-[3%] bg-[#150733] hover:border-[#FAD318] hover:cursor-pointer"><a href="/" class="px-5">Vende en Eneba</a></li>
-					</ul>
-				  </div>
+
 			
-				  <div class="flex-col mx-[2%] list-none">
+				  <div class="flex-col ml-[40%] list-none">
 					<li class="text-white text-xl font-bold mb-[10%]">Siguenos</li>
 					<ul class="inline-flex my-[2%] space-x-5">
-					  <li><Icon name="mdi:facebook" class="size-10"/></li>
-					  <li><Icon name="mdi:twitter" class="size-10"/></li>
-					  <li><Icon name="mdi:instagram" class="size-10 "/></li>
-					  <!-- discord -->
-					  <li><Icon name="mdi:bunny-outline" class="size-10"/></li>
+					  <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><Icon name="mdi:facebook" class="size-10 hover:text-[#f2ede4]"/></a></li>
+					  <li><a href="https://x.com/?lang=es"><Icon name="mdi:twitter" class="size-10 hover:text-[#f2ede4]"/></a></li>
+					  <li><a href="https://www.instagram.com/"><Icon name="mdi:instagram" class="size-10 hover:text-[#f2ede4]"/></a></li>
 					</ul>
 				  </div>
 			
-				  <div class="list-none">
-					<li class="font-bold ">Descarga nuestra App de Eneba</li>
-					<ul class="flex-col mt-[5%]">
-					  <img src="img/gugolPlay.svg" alt="" class="w-[50%] h-[20%]">
-					  <img src="img/appEstor.svg" alt="" class="w-[50%] h-[20%] my-[5%]">
-					  
-					</ul>
-				  </div>
-				</div>
-		  
-				<div class="ml-[13%]">
-				  <ul class="flex-col">
-					<li class="text-sm font-bold">Ve lo que opinan de nosotros</li>
-					<li><img src="img/trustPilot.png" alt=""></li>
-				  </ul>
-				</div>
-		  
-				<div class="ml-[13%]">
-				  <ul class="flex-col">
-					<li class="text-sm font-bold my-[1%] hover">Obten ofertas personalizadas de videojuegos</li>
-					<input type="text" placeholder="Ingresa tu email" class="py-1 inline-flex border-y-2 border-l-2 border-white placeholder:pl-5 placeholder:pr-20 placeholder:py-2  placeholder:bg-[#150733] w-[20%] "><li class="inline-flex border-2 border-white px-3 py-1 hover:border-[#FAD318] hover:cursor-pointer duration-300">Suscribirse</li>
-					<ul class="inline-flex ml-[40%] border-2 border-white px-2 hover:border-[#FAD318] hover:cursor-pointer">
-					<li class="inline-flex py-2"><img src="img/colombia.png" alt="" class="size-5 mr-2 ">Español Latinoamericano</li>
-					<li class="mx-1 py-2">|</li>
-					<li class="py-2">COP</li>
-					</ul>
-					
-					<div>
-					  <ul class="inline-flex text-xs text-[#B3AAC9]">
-						<li>Puedes darte de baja en cualquier momento. Visita el apartado </li><li class="mx-1 underline">Aviso de Privacidad</li> <li> para más informacion</li>
-					  </ul>
-				  </div>
-				  <ul class="text-xs text-[#B3AAC9] my-[2%]">
-					<li>Copyright © 2024 Eneba. Todos los derechos reservados. SA “Helis play”, C/Gyneju 4-333, Vilnius, República de Lituania Términos y Condiciones, Aviso de Privacidad, Preferencias de las cookies.</li>
-				  </ul>
-				</div>
 			</div>
 		
 	</body>
