@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="">
-	<div class="w-[100%] h-auto">
+<div class="w-[100%] h-auto">
 		<div class="bg-[url('public/img/fondos/fondo2.jpeg')] w-[100%] h-[900px] bg-cover list-none  ">
 			<li class="text-[#574240] text-9xl font-bold mx-[35%]">VERSELL</li>
 
@@ -29,18 +29,106 @@ import { Icon } from 'astro-icon/components';
 			</div>	
 		</div>
 
-		<section class="recomendaciones">
-			<div class="w-[100%] h-[1000px] my-10 ">
+		<div id="recomendaciones">
+			<div class="w-[100%] h-[1000px] py-32 bg-gradient-to-b from-[#8e9931] to-[#f1ea70] ">
 				<div class="w-[90%] h-[800px] mx-[5%] py-[1%]  rounded-xl bg-[#719c64] ">
-				<div class="w-[98%] h-[760px] bg-white mx-auto rounded-3xl ">
-				</div>
+				  <div class="w-[98%] h-[760px] bg-white mx-5 rounded-3xl inline-flex">
+					<div class="bg-[url('/img/fondos/fondoRese.jpg')] w-[50%] h-full bg-cover"></div>
 
-				</div>
+					<div class="w-[50%] h-full float-end bg-[#595048]">
+					<p class="text-white text-3xl text-center font-bold mt-10">RECOMENDACIONES AL MOMENTO DE USAR LA PAGINA</p>
 
+					<div class="embla">
+						<div class="embla__viewport">
+						  <div class="embla__container">
+							<div class="embla__slide bg-green-400">
+								<div class="flex-col w-[100%] h-full">
+								  <div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+								  <div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
+									<p>Holaaaaaaaaaaaaaa</p>
+								  </div>
+								</div>
+							</div>
+							<div class="embla__slide bg-blue-400">
+								<div class="flex-col w-[100%] h-full">
+									<div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
+									  <p>Holaaaaaaaaaaaaaa</p>
+									</div>
+								  </div>
+							</div>
+
+							<div class="embla__slide bg-yellow-400">
+								<div class="flex-col w-[100%] h-full">
+									<div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
+									  <p>Holaaaaaaaaaaaaaa</p>
+									</div>
+								  </div>
+							</div>
+
+
+						  </div>
+						</div>
+						<button class="embla__prev float-start my-32 mx-10"><Icon name="mdi:keyboard-arrow-left" class="size-10 bg-[#719c64] rounded-full text-white" /></button>
+						<button class="embla__next float-end my-32 mx-10"><Icon name="mdi:keyboard-arrow-right" class="size-10 bg-[#719c64] rounded-full text-white" /></button>
+					</div>
+
+						
+				   </div>
+				</div>
 			</div>
-		</section>
+		</div>
+		<!-- fin recomendaciones -->
 
-	</div>
+		<!-- acerca de -->
+		<div class="w-[100%] h-[20px] bg-gradient-to-b from-[#f1ea70] to-[#f2ede4]"></div>
+
+
+		<div id="acercaDe" class="w-[100%] h-[1100px] py-32 bg-[#f2ede4]">
+			<div class="">
+				<div class="group w-[30%] mx-20 mb-10">
+				<p class=" text-[#8e9931] group-hover:text-black">En esta seccion te contamos brevemente</p>
+				<p class="text-3xl font-bold group-hover:text-[#8e9931] hover:cursor-default">Que servicios ofrecemos</p>
+				</div>
+
+		<div class="w-[100%] h-[20px] bg-gradient-to-b from-[#f2ede4] to-[#8e9931]/80"></div>
+
+				<div class="w-[100%] h-[100%] bg-[#8e9931]/80 inline-flex">
+					<div class="w-[25%] h-[600px] bg-[#574240] hover:shadow-2xl my-20 mx-20 rounded-3xl group">
+						<ul class="flex-col text-white text-center ">
+							<li><Icon name="mdi:car-estate" class="size-32 mx-auto mt-20 px-2 bg-[#8e9931] group-hover:shadow-2xl rounded-full" /></li>
+							<li class="text-3xl my-10 font-bold">Servicio de Transporte</li>
+							<li class="my-20 text-2xl">Al momento de comprar en nuestra plataforma no debes preocuparte por recoger el producto ya que este llegara directamente a tu casa o negocio.</li>
+						</ul>
+					</div>
+
+					<div class="w-[25%] h-[600px] bg-[#574240] hover:shadow-2xl my-20 mx-20 rounded-3xl group">
+						<ul class="flex-col text-white text-center ">
+							<li><Icon name="mdi:lock-check" class="size-32 mx-auto mt-20 px-2 bg-[#8e9931] group-hover:shadow-2xl rounded-full" /></li>
+							<li class="text-3xl my-10 font-bold">Tu seguridad esta asegurada</li>
+							<li class="my-20 text-2xl">Cuando te comprometes a usar nuestra platarforma para comprar productos nosotros nos comprometemos con la seguridad de tu pedido asi que siempre sabras donde se encuentra.</li>
+						</ul>
+					</div>
+
+					<div class="w-[25%] h-[600px] bg-[#574240] hover:shadow-2xl my-20 mx-20 rounded-3xl group">
+						<ul class="flex-col text-white text-center ">
+							<li><Icon name="mdi:plant-outline" class="size-32 mx-auto mt-20 px-2 bg-[#8e9931] group-hover:shadow-2xl rounded-full" /></li>
+							<li class="text-3xl my-10 font-bold">Productos de alta calidad</li>
+							<li class="my-20 text-2xl">Todos los productos que se venden por nuestra plataforma son previamente revisados para que cumplan con los estandares de calidad y puedas estar seguro de comprarlos.</li>
+						</ul>
+					</div>
+				</div>
+		<div class="w-[100%] h-[20px] bg-gradient-to-b from-[#8e9931]/80 to-[#f2ede4]"></div>		
+				
+
+
+
+			
+				
+		
+
+</div>
 
 		
 
@@ -55,4 +143,40 @@ import { Icon } from 'astro-icon/components';
 	.boton{
 		@apply bg-[#4f5733] px-[20%] py-[2%] rounded-full border-2 border-[#4f5733];
 	}
+
+    .embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  @apply h-[500px] w-[100%]; 
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
 </style>
+
+<script>
+
+import EmblaCarousel from 'embla-carousel'
+
+// Grab wrapper nodes
+const rootNode = document.querySelector('.embla')
+const viewportNode = rootNode.querySelector('.embla__viewport')
+
+// Grab button nodes
+const prevButtonNode = rootNode.querySelector('.embla__prev')
+const nextButtonNode = rootNode.querySelector('.embla__next')
+
+// Initialize the carousel
+const embla = EmblaCarousel(viewportNode)
+
+// Add click listeners
+prevButtonNode.addEventListener('click', embla.scrollPrev, false)
+nextButtonNode.addEventListener('click', embla.scrollNext, false)
+
+
+
+	
+</script>
