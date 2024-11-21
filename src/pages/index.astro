@@ -41,37 +41,69 @@ import { Icon } from 'astro-icon/components';
 					<div class="embla">
 						<div class="embla__viewport">
 						  <div class="embla__container">
-							<div class="embla__slide bg-green-400">
+							<div class="embla__slide">
 								<div class="flex-col w-[100%] h-full">
-								  <div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+								  <div class="bg-[url('/img/slider1.png')] w-[100%] h-[100%] bg-cover"></div>
 								  <div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
-									<p>Holaaaaaaaaaaaaaa</p>
+									<ul class="flex-col mx-5">
+										<li class="text-xl font-medium">Primer paso (vender)</li>
+										<li>Presiona el boton de vender, esto lo llevara a un pequeño formulario que debera llenar</li>
+									</ul>
 								  </div>
 								</div>
 							</div>
-							<div class="embla__slide bg-blue-400">
+							<div class="embla__slide">
 								<div class="flex-col w-[100%] h-full">
-									<div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="bg-[url('/img/slider2.png')] w-[100%] h-[100%] bg-no-repeat"></div>
 									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
-									  <p>Holaaaaaaaaaaaaaa</p>
+										<ul class="flex-col mx-5">
+											<li class="text-xl font-medium">Segundo paso (vender)</li>
+											<li>Rellene el formulario con la informacion que se le pide y recuerde ser claro con la informacion importante</li>
+										</ul>
 									</div>
 								  </div>
 							</div>
 
-							<div class="embla__slide bg-yellow-400">
+							<div class="embla__slide ">
 								<div class="flex-col w-[100%] h-full">
-									<div class="bg-[url('/img/fondos/fondoRegister.jpg')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="bg-[url('/img/slider3.png')] w-[100%] h-[100%] bg-no-repeat"></div>
 									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
-									  <p>Holaaaaaaaaaaaaaa</p>
+										<ul class="flex-col mx-5">
+											<li class="text-xl font-medium">Primer paso (comprar)</li>
+											<li>Presione el boton de comprar para entrar a la seccion de productos</li>
+										</ul>
+									</div>
+								  </div>
+							</div>
+							
+							<div class="embla__slide ">
+								<div class="flex-col w-[100%] h-full">
+									<div class="bg-[url('/img/slider4.png')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
+										<ul class="flex-col mx-5">
+											<li class="text-xl font-medium">Segundo paso (comprar)</li>
+											<li>Presione el boton de comprar para entrar a la publicacion del articulo que desea comprar y rellene el formulario para completar su pedido</li>
+										</ul>
 									</div>
 								  </div>
 							</div>
 
+							<div class="embla__slide ">
+								<div class="flex-col w-[100%] h-full">
+									<div class="bg-[url('/img/slider4.png')] w-[100%] h-[100%] bg-no-repeat"></div>
+									<div class="text-white bg-[#4f5733] w-[100%] h-[20%]">
+										<ul class="flex-col mx-5">
+											<li class="text-xl font-medium">Tercer paso (comprar)</li>
+											<li>Presione el boton de comprar para entrar a la seccion de productos</li>
+										</ul>
+									</div>
+								  </div>
+							</div>
 
 						  </div>
 						</div>
-						<button class="embla__prev float-start my-32 mx-10"><Icon name="mdi:keyboard-arrow-left" class="size-10 bg-[#719c64] rounded-full text-white" /></button>
-						<button class="embla__next float-end my-32 mx-10"><Icon name="mdi:keyboard-arrow-right" class="size-10 bg-[#719c64] rounded-full text-white" /></button>
+						<button class="embla__prev float-start my-28 mx-10"><Icon name="mdi:keyboard-arrow-left" class="size-10 bg-[#719c64] rounded-full text-white hover:text-[#719c64] hover:bg-white" /></button>
+						<button class="embla__next float-end my-28 mx-10"><Icon name="mdi:keyboard-arrow-right" class="size-10 bg-[#719c64] rounded-full text-white hover:text-[#719c64] hover:bg-white " /></button>
 					</div>
 
 						
@@ -85,7 +117,7 @@ import { Icon } from 'astro-icon/components';
 		<div class="w-[100%] h-[20px] bg-gradient-to-b from-[#f1ea70] to-[#f2ede4]"></div>
 
 
-		<div id="acercaDe" class="w-[100%] h-[1100px] py-32 bg-[#f2ede4]">
+		<div id="acercaDe" class="w-[100%] h-[1200px] py-32 bg-[#f2ede4]">
 			<div class="">
 				<div class="group w-[30%] mx-20 mb-10">
 				<p class=" text-[#8e9931] group-hover:text-black">En esta seccion te contamos brevemente</p>
@@ -121,17 +153,7 @@ import { Icon } from 'astro-icon/components';
 				</div>
 		<div class="w-[100%] h-[20px] bg-gradient-to-b from-[#8e9931]/80 to-[#f2ede4]"></div>		
 				
-
-
-
-			
-				
-		
-
 </div>
-
-		
-
 
 </Layout>
 
